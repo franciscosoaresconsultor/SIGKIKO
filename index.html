@@ -379,7 +379,7 @@ h4 { font-size: 1.1rem; }
   background: var(--mist); padding: 2px 8px; border-radius: 10px;
   color: var(--muted);
 }
-.crm-content { padding: 28px 24px 100px; }
+.crm-content { padding: 28px 24px 100px;   overflow-x: auto; }
 @media (min-width: 768px) { .crm-content { padding: 36px 40px 100px; } }
 
 /* CRM bottom nav (mobile) */
@@ -590,7 +590,7 @@ h4 { font-size: 1.1rem; }
 .kanban {
   display: grid; grid-template-columns: repeat(6, minmax(240px, 1fr));
   gap: 14px; overflow-x: auto; padding-bottom: 12px;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;   min-width: max-content;
 }
 .kanban-col {
   background: var(--paper-warm); border: 1px solid var(--line);
@@ -819,7 +819,7 @@ h4 { font-size: 1.1rem; }
 .flow {
   display: flex; align-items: stretch; gap: 8px;
   overflow-x: auto; padding: 8px 0 16px;
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: x mandatory;   min-width: max-content;
 }
 .flow-step {
   flex: 1; min-width: 140px;
